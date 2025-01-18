@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-background-color: rgb(246, 234, 222);
+background-color: rgba(246, 234, 222);
 font-family: "Jacques Francois", serif;
 font-weight: 400;
 font-style: normal;
@@ -64,7 +64,7 @@ font-style: normal;
     right: 0;
     top: 0;
     z-index: -1;
-    width: 15%;
+    width: 10%;
     height: 100%;
     overflow: hidden;
    
@@ -78,9 +78,7 @@ font-style: normal;
     width: 100%;
     height: 150px;
     /* position: fixed; */
-    background-image: linear-gradient(#baa684 46%,#ebecf0 8%,
-    #a89574 46%
-    );
+    background-color: #a89574;
 
 }
 
@@ -100,6 +98,9 @@ font-style: normal;
     cursor: pointer;
     
     
+}
+.important_li:hover{
+    color: red;
 }
 .navigation_second_deep{
     background-image: inherit;
@@ -143,7 +144,7 @@ font-style: normal;
     right: 0;
    top:0;
     z-index: -1;
-    width: 15%;
+    width: 10%;
     height: 100%;
     overflow: hidden;
    
@@ -224,9 +225,8 @@ font-style: normal;
    
 
 }
-.producent_img_container >img{
-    margin-top: 5%;
-}
+
+
 .hue_rotate_animation{
     background-image: url("../assets/salon-11.png");
     background-position: center center;
