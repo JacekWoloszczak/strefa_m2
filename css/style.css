@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-background-color: rgba(246, 234, 222);
+/* background-color: rgba(246, 234, 222); */
 
 font-family: "Jacques Francois", serif;
 font-weight: 400;
@@ -186,29 +186,36 @@ font-style: normal;
     z-index: 5;
  
 }
-.span_demo_container{
-   
-    text-transform: uppercase;
-    /* color: #902000; */
-   color: white;
-    font-size: 50px;
-    text-shadow: 2px 2px rgb(180, 19, 19);
 
-}
 .span_text_asortiment{
     position: absolute;
     left: 5%;
     top: 20%;
+    text-transform: uppercase;
+
+   color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px rgb(180, 19, 19);
 }
 .span_text_design{
     position: absolute;
     left: 5%;
     top: 40%;
+    text-transform: uppercase;
+
+   color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px rgb(180, 19, 19);
 }
 .span_text_enployed{
     position: absolute;
     left: 5%;
     top:60%;
+    text-transform: uppercase;
+
+   color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px rgb(180, 19, 19);
 }
 
 .img_demo{
