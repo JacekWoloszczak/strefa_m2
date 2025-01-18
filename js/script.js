@@ -7,8 +7,8 @@ const unseenList= document.querySelector(".navigation_second_deep")
 const importantLi= document.querySelector(".important_li")
 const navigationDiv= document.querySelector(".navigation");
 const SQUARE= 5508;
-const MOSAIC= 500;
-const MOSAICMAIN=1500;
+const MOSAIC= 200;
+const MOSAICMAIN=750;
 
 function getRandomColor() {
     
