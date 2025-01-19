@@ -6,9 +6,11 @@ const mosaicPallette= ["#a89574", "#902000", "#9e6000", "#470c00","#6e4204"];
 const unseenList= document.querySelector(".navigation_second_deep")
 const importantLi= document.querySelector(".important_li")
 const navigationDiv= document.querySelector(".navigation");
+const mosaicDown= document.querySelector(".mosaic_footer");
 const SQUARE= 5508;
 const MOSAIC= 200;
 const MOSAICMAIN=600;
+const MOSAICFOOTER= 100;
 
 function getRandomColor() {
     
@@ -43,6 +45,13 @@ for (let i = 0; i < MOSAICMAIN; i++){
   squares.classList.add("squaresMosaic");
   squares.style.backgroundColor=getFromMosaicPallete();
   mosaicMain.appendChild(squares);
+      
+}
+for (let i = 0; i < MOSAICFOOTER; i++){
+  const squares= document.createElement("div");
+  squares.classList.add("squaresFooter");
+  squares.style.backgroundColor=getFromMosaicPallete();
+  mosaicDown.appendChild(squares);
       
 }
   importantLi.addEventListener("click", ()=>{
