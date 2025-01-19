@@ -8,8 +8,8 @@ const importantLi= document.querySelector(".important_li")
 const navigationDiv= document.querySelector(".navigation");
 const mosaicDown= document.querySelector(".mosaic_footer");
 const SQUARE= 5508;
-const MOSAIC= 200;
-const MOSAICMAIN=600;
+const MOSAIC= 400;
+const MOSAICMAIN=1200;
 const MOSAICFOOTER= 100;
 
 function getRandomColor() {
