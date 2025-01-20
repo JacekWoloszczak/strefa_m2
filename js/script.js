@@ -12,6 +12,23 @@ const MOSAIC= 400;
 const MOSAICMAIN=1200;
 const MOSAICFOOTER= 100;
 
+const weAreHere = document.querySelector(".we_are_here");
+const hideMap = document.querySelector(".container_with_map_wrapper");
+
+function windowsClose() {
+  hideMap.classList.remove("is-visibility");
+}
+
+weAreHere.addEventListener("click", () => {
+  hideMap.classList.toggle("is-visibility");
+});
+
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".we_are_here") && !e.target.closest(".container_with_map_wrapper")) {
+    windowsClose();
+  }
+});
+
 // function getRandomColor() {
     
 //   const color= Math.floor(Math.random() * pallette.length);
@@ -19,7 +36,6 @@ const MOSAICFOOTER= 100;
   
 
 //   }
-
 
 // for (let i = 0; i < SQUARE; i++){
 //     const squares= document.createElement("div");

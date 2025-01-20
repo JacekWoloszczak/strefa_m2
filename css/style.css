@@ -11,6 +11,9 @@ font-style: normal;
 
 
 }
+.is-visibility{
+    visibility: visible;
+    }
 .header_relative_wrapper{
     position: relative;
     width: 100%;
@@ -26,12 +29,7 @@ font-style: normal;
    
 }
 
-.d_flex{
-    display: flex;
-}
-.d_none{
-    display: none;
-}
+
 .head_h1{
     display: flex;
     justify-content: center;
@@ -80,6 +78,7 @@ font-style: normal;
    
     background-color: rgba(255, 255, 255, 0.121);
 }
+
 .navigation{
     color:white;
     font-weight:900;
@@ -93,7 +92,18 @@ font-style: normal;
     background-color: rgba(48, 5, 88, 0.167);
 
 }
+.we_are_here{
+    width: 10%;
+    margin-left: 1%;
+    left: 0;
+    cursor: pointer;
 
+}
+.we_are_here_span{
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+}
 
 .navigation-ul{
   
@@ -131,6 +141,34 @@ font-style: normal;
 .second-deep-li{
     width: 50px;
     height: auto;
+}
+.container_with_map_wrapper{
+    width: 60%;
+   visibility: hidden;
+    
+    padding-bottom: 5%;
+    background-color:rgba(48, 5, 88, 0.167);
+    border: 2px solid black;
+}
+.container_with_map_wrapper.is-visibility {
+  visibility: visible;
+  }
+.container_with_map{
+    display: flex;
+    background-color: black;
+    padding-bottom: 4%;
+    width: 95%;
+}
+.information_list{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+    flex-direction:column;
+    gap: 20px;
+    font-size: larger;
+
 }
 .navigation_static_image{
     background-image: url("../assets/salon-4.png");
@@ -379,4 +417,10 @@ font-style: normal;
     width: 100%;
     height: 20px;
     overflow: hidden;
+}
+.d_flex{
+    display: flex;
+}
+.d_none{
+    display: none;
 }
