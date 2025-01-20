@@ -7,27 +7,27 @@ const unseenList= document.querySelector(".navigation_second_deep")
 const importantLi= document.querySelector(".important_li")
 const navigationDiv= document.querySelector(".navigation");
 const mosaicDown= document.querySelector(".mosaic_footer");
-const SQUARE= 5508;
+// const SQUARE= 5508;
 const MOSAIC= 400;
 const MOSAICMAIN=1200;
 const MOSAICFOOTER= 100;
 
-function getRandomColor() {
+// function getRandomColor() {
     
-  const color= Math.floor(Math.random() * pallette.length);
-  return pallette[color];
+//   const color= Math.floor(Math.random() * pallette.length);
+//   return pallette[color];
   
 
-  }
+//   }
 
 
-for (let i = 0; i < SQUARE; i++){
-    const squares= document.createElement("div");
-    squares.classList.add("squares");
-    squares.style.backgroundColor=getRandomColor();
-    container.appendChild(squares);
+// for (let i = 0; i < SQUARE; i++){
+//     const squares= document.createElement("div");
+//     squares.classList.add("squares");
+//     squares.style.backgroundColor=getRandomColor();
+//     container.appendChild(squares);
         
-}
+// }
 function getFromMosaicPallete(){
   const colorMosaic= Math.floor(Math.random() * mosaicPallette.length);
   return mosaicPallette[colorMosaic];
