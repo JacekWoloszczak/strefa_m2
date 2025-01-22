@@ -18,7 +18,10 @@ const hideMap = document.querySelector(".container_with_map_wrapper");
 function windowsClose() {
   hideMap.classList.remove("is-visibility");
 }
+function liClose(){
+  unseenList.classList.add("is-hidden");
 
+}
 weAreHere.addEventListener("click", () => {
   hideMap.classList.toggle("is-visibility");
 });
@@ -78,4 +81,8 @@ for (let i = 0; i < MOSAICFOOTER; i++){
  
   });
 
-
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".important_li") && !e.target.closest(".navigation_second_deep_container")) {
+      liClose();
+    }
+  });

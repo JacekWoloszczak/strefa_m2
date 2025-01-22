@@ -103,12 +103,15 @@ font-style: normal;
     cursor: pointer;
 
 }
+
 .we_are_here_span{
     color: white;
     font-weight: 900;
     text-transform: uppercase;
 }
-
+.we_are_here_span:hover{
+    color: red;
+}
 .navigation-ul{
   
     font-weight: bolder;
@@ -141,6 +144,7 @@ font-style: normal;
     align-items: center;
     background-color:rgba(48, 5, 88, 0.167);
     border: 1px solid black;
+    z-index: 0;
 
 
     
@@ -151,20 +155,17 @@ font-style: normal;
     flex-direction: column;
     justify-content: center;
     align-items: center;
- 
-  
-    
-    
     
     list-style-type: none;
-    
-    
-    gap: 40px; 
-    
+    gap: 40px;
 
 }
-
-
+.second-deep-li{
+    cursor: pointer;
+}
+.second-deep-li:hover{
+color: red;
+}
 .container_with_map_wrapper{
     width: 60%;
    visibility: hidden;
