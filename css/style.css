@@ -110,7 +110,7 @@ font-style: normal;
     text-transform: uppercase;
 }
 .we_are_here_span:hover{
-    color: red;
+    color: goldenrod;
 }
 .navigation-ul{
   
@@ -130,7 +130,7 @@ font-style: normal;
     
 }
 .important_li:hover{
-    color: red;
+    color: goldenrod;
 }
 .navigation_second_deep_container{
     position: absolute;
@@ -144,7 +144,7 @@ font-style: normal;
     align-items: center;
     background-color:rgba(48, 5, 88, 0.167);
     border: 1px solid black;
-    z-index: 0;
+
 
 
     
@@ -164,7 +164,7 @@ font-style: normal;
     cursor: pointer;
 }
 .second-deep-li:hover{
-color: red;
+color: goldenrod;
 }
 .container_with_map_wrapper{
     width: 60%;
