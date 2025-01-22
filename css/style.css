@@ -14,6 +14,9 @@ font-style: normal;
 .is-visibility{
     visibility: visible;
     }
+    .is-hidden{
+        visibility: hidden;
+    }
 .header_relative_wrapper{
     position: relative;
     width: 100%;
@@ -21,7 +24,7 @@ font-style: normal;
 }
 .pre_navigation{
     width: 100%;
-
+   
    display: flex;
    justify-content: center;
    align-items: center;
@@ -36,6 +39,7 @@ font-style: normal;
     align-items: center;
     text-transform: uppercase;
     font-size: 26px;
+  
  
 }
 .head_h2{
@@ -88,7 +92,7 @@ font-style: normal;
     border: 2px solid black;
     width: 100%;
     height: 150px;
-    /* position: fixed; */
+    position: relative;
     background-color: rgba(48, 5, 88, 0.167);
 
 }
@@ -120,28 +124,47 @@ font-style: normal;
     cursor: pointer;
     
     
+    
 }
 .important_li:hover{
     color: red;
 }
-.navigation_second_deep{
-    background-image: inherit;
-    width: inherit;
-  
-    width: 50%;
-    align-items: center;
+.navigation_second_deep_container{
+    position: absolute;
+    width: 10%;
+    height: inherit;
+    bottom: -103%;
+    color: white;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-color:rgba(48, 5, 88, 0.167);
     border: 1px solid black;
-    list-style-type: none;
-    padding: 0.5%;
+
+
+    
+}
+.navigation_second_deep{
+    
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 120px; 
+ 
+  
+    
+    
+    
+    list-style-type: none;
+    
+    
+    gap: 40px; 
+    
+
 }
-.second-deep-li{
-    width: 50px;
-    height: auto;
-}
+
+
 .container_with_map_wrapper{
     width: 60%;
    visibility: hidden;
@@ -171,7 +194,7 @@ font-style: normal;
 
 }
 .navigation_static_image{
-    background-image: url("../assets/salon-4.png");
+    background-image: url("../assets/salon-11.png");
     background-size: cover;
     background-attachment: fixed;
     z-index: 5;
@@ -181,9 +204,10 @@ font-style: normal;
 .main_relative_wrapper{
     position:relative;
     width: 100%;
-    height: auto;
     padding-top: 5%;
     padding-bottom: 5%;
+   
+
 }
 .mosaic_main{
     display: flex;
@@ -197,6 +221,7 @@ font-style: normal;
     width: 10%;
     height: 100%;
     overflow: hidden;
+    
    
     
 }
@@ -288,9 +313,19 @@ font-style: normal;
 .text_container{
     width: 100%;
     display: flex;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
 
  
     
+}
+.text_container_second-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .text_for_slaider{
     width: 50%;
@@ -300,8 +335,8 @@ font-style: normal;
 .text_container_paragraph{
     font-size: 20px;
     line-height: 1.8;
-    margin-top: 8%;
     margin-left: 5%;
+   
 }
 .producent_img_container{
     width: 50%;
@@ -316,8 +351,8 @@ font-style: normal;
 
 
 .hue_rotate_animation{
-    background-image: url("../assets/salon-11.png");
-    background-position: center center;
+    background-image: url("../assets/salon-4.png");
+    background-size: cover;
     width: 100%;
     height: 700px;
     background-attachment: fixed;
