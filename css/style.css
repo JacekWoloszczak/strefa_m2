@@ -530,6 +530,12 @@ color: #902000;
 
 
 }
+.text_container_cousine{
+    width: 70%;
+    display: flex;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
 .kitchen_sink_wall{
     background-color: #151315;
     position: relative;
