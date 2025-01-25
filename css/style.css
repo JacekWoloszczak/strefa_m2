@@ -11,6 +11,10 @@ font-style: normal;
 
 
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 .is-visibility{
     visibility: visible;
     }
@@ -97,6 +101,7 @@ font-style: normal;
     background-color:#9e5f0038;
 
 }
+
 .we_are_here{
     width: 10%;
     margin-left: 1%;
@@ -111,7 +116,7 @@ font-style: normal;
     text-transform: uppercase;
 }
 .we_are_here_span:hover{
-    color: goldenrod;
+    color: #902000;
 }
 .navigation-ul{
   
@@ -122,6 +127,7 @@ font-style: normal;
  justify-content: center;
     align-items: center;
     gap: 20px;
+    cursor: pointer;
     
 }
 .important_li{
@@ -131,7 +137,7 @@ font-style: normal;
     
 }
 .important_li:hover{
-    color: goldenrod;
+    color: #902000;
 }
 .navigation_second_deep_container{
     position: absolute;
@@ -166,7 +172,7 @@ font-style: normal;
     cursor: pointer;
 }
 .second-deep-li:hover{
-color: goldenrod;
+color: #902000;
 }
 .container_with_map_wrapper{
     width: 60%;
@@ -197,6 +203,7 @@ color: goldenrod;
     font-size: larger;
 
 }
+
 .navigation_static_image{
     background-image: url("../assets/salon-11.png");
     background-size: cover;
@@ -205,6 +212,7 @@ color: goldenrod;
     width: 100%;
     height: 700px;
 }
+
 .main_relative_wrapper{
     position:relative;
     width: 100%;
@@ -416,6 +424,7 @@ color: goldenrod;
     width: 100%;
   
     height: auto;
+    
     padding-bottom: 5%;
     background-color: #151315;
     display: flex;
@@ -462,4 +471,136 @@ color: goldenrod;
 }
 .d_none{
     display: none;
+}
+
+
+/* =========================================KUCHNIA======================================================= */
+.navigation_static_image_cousine{
+    background-image: url("../assets/salon-9.png");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 700px;
+}
+.navigation_cousine{
+    color:white;
+    font-weight:900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    width: 100%;
+    height: 150px;
+    position: relative;
+ 
+    background-color:#454c6044;
+}
+.navigation_second_deep_container_cousine{
+    position: absolute;
+    width: 10%;
+    height: inherit;
+    bottom: -103%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color:rgba(48, 5, 88, 0.167); */
+    background-color:#454c6044;
+    border: 1px solid black;
+}
+
+
+.main_relative_wrapper_cousine{
+    position:relative;
+    width: 100%;
+   
+    padding-top: 5%;
+
+}
+.silver_glass_imitation{  
+    position: absolute;
+    top: 0;
+    right:7%;
+   width: 15%;
+   height: 100%;
+   background-image:linear-gradient(to left, #c5c6c8, #848ca1, #d8dee9,#454c60,#2e3240,#f0edf3);
+   z-index:-1;
+
+
+}
+.kitchen_sink_wall{
+    background-color: #151315;
+    position: relative;
+}
+
+.sink_button_first{
+    position: absolute;
+    top: 45%;
+    left: 41.5%;
+    background-color:#0fc33f;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+.sink_button_second{
+    position: absolute;
+    top: 27%;
+    right:5%;
+    background-color:#0fc33f;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.sink_button_third{
+    position: absolute;
+    top: 45%;
+    right:11%;
+    background-color:#0fc33f;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.sink_presentation_first{
+    position: absolute;
+    top: 35%;
+    left: 46%;
+    width: 35%;
+    background-color: #f0edf3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    border: 2px solid black;
+}
+.sink_presentation_second{
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    width: 35%;
+    width: 40%;
+    background-color: #f0edf3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    border: 2px solid black;
+}
+.sink_presentation_third{
+    position: absolute;
+    top: 35%;
+    right: 15%;
+    width: 35%;
+    width: 40%;
+    background-color: #f0edf3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    border: 2px solid black;
 }
