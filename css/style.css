@@ -93,7 +93,8 @@ font-style: normal;
     width: 100%;
     height: 150px;
     position: relative;
-    background-color: rgba(48, 5, 88, 0.167);
+    /* background-color: rgba(48, 5, 88, 0.167); */
+    background-color:#9e5f0038;
 
 }
 .we_are_here{
@@ -142,7 +143,8 @@ font-style: normal;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:rgba(48, 5, 88, 0.167);
+    /* background-color:rgba(48, 5, 88, 0.167); */
+    background-color:#9e5f0038;
     border: 1px solid black;
 
 
@@ -171,7 +173,8 @@ color: goldenrod;
    visibility: hidden;
     
     padding-bottom: 5%;
-    background-color:rgba(48, 5, 88, 0.167);
+    /* background-color:rgba(48, 5, 88, 0.167); */
+    background-color:#9e5f0038;
     border: 2px solid black;
 }
 .container_with_map_wrapper.is-visibility {
@@ -286,7 +289,7 @@ color: goldenrod;
     width: 100%;
     height: 700px;
     background-attachment: fixed;
-    background-image: url("../assets/salon-14.png");
+    background-image: url("../assets/salon-14v2.jpg");
     background-size: cover;
 
 }
@@ -352,7 +355,7 @@ color: goldenrod;
 
 
 .hue_rotate_animation{
-    background-image: url("../assets/salon-4.png");
+    background-image: url("../assets/salon-4v2.jpg");
     background-size: cover;
     width: 100%;
     height: 700px;
