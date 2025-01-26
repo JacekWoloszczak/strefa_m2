@@ -36,13 +36,33 @@ a{
     width: 100%;
    
    display: flex;
-   justify-content: center;
-   align-items: center;
+   
  
    
 }
+.prenavigation_contact{
+    width: 33%;
+    display: flex;
+    
 
+}
 
+.prenavigation_information_list{
+    display: flex;
+    color:#151315;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+    flex-direction:column;
+    gap: 20px;
+    font-size: medium;
+}
+.prenavigation_logo{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .head_h1{
     display: flex;
     justify-content: center;
