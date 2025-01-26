@@ -1,4 +1,4 @@
-const unseenList= document.querySelector(".navigation_second_deep_container_cousine")
+const unseenList= document.querySelector(".navigation_second_deep_container_kitchen")
 const importantLi= document.querySelector(".important_li")
 const weAreHere = document.querySelector(".we_are_here");
 const hideMap = document.querySelector(".container_with_map_wrapper");

@@ -480,7 +480,7 @@ color: #902000;
 
 
 /* =========================================KUCHNIA======================================================= */
-.navigation_static_image_cousine{
+.navigation_static_image_kitchen{
     background-image: url("../assets/salon-9.png");
     background-size: cover;
     background-attachment: fixed;
@@ -488,7 +488,7 @@ color: #902000;
     width: 100%;
     height: 700px;
 }
-.navigation_cousine{
+.navigation_kitchen{
     color:white;
     font-weight:900;
     display: flex;
@@ -501,7 +501,7 @@ color: #902000;
  
     background-color:#454c6044;
 }
-.navigation_second_deep_container_cousine{
+.navigation_second_deep_container_kitchen{
     position: absolute;
     width: 10%;
     height: inherit;
@@ -517,7 +517,7 @@ color: #902000;
 }
 
 
-.main_relative_wrapper_cousine{
+.main_relative_wrapper_kitchen{
     position:relative;
     width: 100%;
    
@@ -535,7 +535,7 @@ color: #902000;
 
 
 }
-.text_container_cousine{
+.text_container_kitchen{
     width: 70%;
     display: flex;
     padding-bottom: 5%;
@@ -624,6 +624,19 @@ color: #902000;
     z-index: 5;
     width: 100%;
     height: 700px;
+}
+.navigation_bathroom{
+    color:white;
+    font-weight:900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    width: 100%;
+    height: 150px;
+    position: relative;
+ 
+    background-color:#5b3c315d; 
 }
 /* ===========================LIGHTBOX======================================================================== */
 .modal {
