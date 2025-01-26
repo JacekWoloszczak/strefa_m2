@@ -23,7 +23,8 @@ a{
 .is-visibility{
     visibility: visible;
     }
-    .is-hidden{
+
+.is-hidden{
         visibility: hidden;
     }
 .header_relative_wrapper{
@@ -638,6 +639,19 @@ color: #902000;
  
     background-color:#5b3c315d; 
 }
+.navigation_second_deep_container_bathroom {
+    position: absolute;
+    width: 10%;
+    height: inherit;
+    bottom: -103%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#5b3c315d;
+    border: 1px solid black;
+}
 /* ===========================LIGHTBOX======================================================================== */
 .modal {
     visibility: hidden;
@@ -754,7 +768,7 @@ color: #902000;
     flex-direction: row;
     justify-content: center;
     bottom: 10%;
-    
+    cursor: pointer;
     gap: 2%;
   }
   .demo:hover {

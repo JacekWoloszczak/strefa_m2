@@ -1,4 +1,4 @@
-const unseenList= document.querySelector(".navigation_second_deep_container_kitchen")
+const unseenList= document.querySelector(".navigation_second_deep_container_bathroom")
 const importantLi= document.querySelector(".important_li")
 const weAreHere = document.querySelector(".we_are_here");
 const hideMap = document.querySelector(".container_with_map_wrapper");
@@ -17,16 +17,18 @@ function windowsClose() {
       windowsClose();
     }
   });
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".important_li") && !e.target.closest(".navigation_second_deep_container")) {
+      liClose();
+    }
+  });
   weAreHere.addEventListener("click", () => {
     hideMap.classList.toggle("is-visibility");
   });
   importantLi.addEventListener("click", ()=>{
     unseenList.classList.toggle("is-hidden");
+    });
     
- 
-   
- 
-  });
   function getFromMosaicPallete(){
     const colorMosaic= Math.floor(Math.random() * mosaicPallette.length);
     return mosaicPallette[colorMosaic];
