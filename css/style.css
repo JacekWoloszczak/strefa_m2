@@ -615,3 +615,136 @@ color: #902000;
     gap: 10%;
     border: 2px solid black;
 }
+
+/* =====================================ŁAZIENKA========================================================== */
+.navigation_static_image_bathroom{
+    background-image: url("../assets/salon-15.png");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 700px;
+}
+/* ===========================LIGHTBOX======================================================================== */
+.modal {
+    visibility: hidden;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), black);
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    
+  }
+  .modal-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  
+  }
+  .mySlides {
+    
+    display: none;
+  
+
+}
+.gallery {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .gallery_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+  }
+  .gallery_list-item {
+    width: 30%;
+    height: 300px;
+    box-shadow: 2px 2px 2px grey;
+    cursor: pointer;
+    background-image: url("../assets/logo-50-35.png");
+    background-repeat: no-repeat;
+    background-position:right 5% top 50%;
+
+  }
+  .close {
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  img.demo {
+    opacity: 0.6;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .column{
+    width: 100%;
+    display:inline-flex;
+    align-items: center;
+     position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 10%;
+    
+    gap: 2%;
+  }
+  .demo:hover {
+    opacity: 1;
+    
+  }
