@@ -450,7 +450,7 @@ color: #902000;
   
     height: auto;
     
-    padding-bottom: 5%;
+    padding-bottom: 2%;
     background-color: #151315;
     display: flex;
 
@@ -480,8 +480,10 @@ color: #902000;
 .footer_logo{
     width: 33%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+ 
+    justify-content:center;
+    align-items:center;
 }
 .mosaic_footer{
     display: flex;
@@ -490,6 +492,13 @@ color: #902000;
     width: 100%;
     height: 20px;
     overflow: hidden;
+}
+.footer_logo{
+    margin-top: 3%;
+}
+.footer_law{
+    margin-top: 10%;
+    cursor: pointer;
 }
 .d_flex{
     display: flex;
