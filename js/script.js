@@ -72,3 +72,23 @@ for (let i = 0; i < MOSAICFOOTER; i++){
       liClose();
     }
   });
+
+
+  (() => {
+    const menuOverlay = document.querySelector(".header__menu-mobile");
+    const closeMenuButton = document.querySelector(".header__exit-btn");
+    const openMenuBtn = document.querySelector(".header__mobile-btn");
+
+    closeMenuButton.style.display="none"
+    openMenuBtn.addEventListener("click", (e) => {
+      menuOverlay.classList.remove("d_none");
+      openMenuBtn.style.display = "none";
+      closeMenuButton.style.display="flex";
+      
+    });
+    closeMenuButton.addEventListener("click", (e) => {
+      menuOverlay.classList.add("d_none");
+      openMenuBtn.style.display = "block";
+      closeMenuButton.style.display="none"
+    });
+  })();
