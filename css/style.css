@@ -1,5 +1,6 @@
-body{
-    width: auto;
+html, body{
+    width: 100%;
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -144,7 +145,7 @@ a{
     position: absolute;
     right: 0;
     top: 0;
-    z-index: -1;
+    z-index: 0;
     width: 10%;
     height: 100%;
 
@@ -300,7 +301,7 @@ a{
     background-image: url("../assets/salon-11.png");
     background-size: cover;
     background-attachment: fixed;
-    z-index: 5;
+
     width: 100%;
     height: 700px;
 }
@@ -338,7 +339,7 @@ a{
     position: absolute;
     right: 0;
    top:0;
-    z-index: -1;
+    z-index: 0;
     width: 10%;
     height: 100%;
     overflow: hidden;
