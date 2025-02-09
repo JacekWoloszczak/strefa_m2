@@ -466,7 +466,7 @@ a{
   .squaresFooter{
     box-shadow: 0 0 2px rgb(243, 238, 238);
      height: 20px;
-    width: 5px;
+    width: calc(370px/140);
    
 }
 }

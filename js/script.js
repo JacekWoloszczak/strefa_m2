@@ -9,7 +9,7 @@ const navigationDiv= document.querySelector(".navigation");
 const mosaicDown= document.querySelector(".mosaic_footer");
 
 const MOSAIC= 400;
-const MOSAICFOOTER=150;
+const MOSAICFOOTER=140;
 const MOSAICMAIN=1400;
 
 
