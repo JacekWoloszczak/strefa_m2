@@ -9,9 +9,50 @@ const navigationDiv= document.querySelector(".navigation");
 const mosaicDown= document.querySelector(".mosaic_footer");
 
 const MOSAIC= 400;
-const MOSAICFOOTER=140;
+let MOSAICFOOTER;
+
 const MOSAICMAIN=1400;
 
+
+
+
+const mediaQueryList = window.matchMedia("(max-width: 376px)");
+const mediaQueryHight = window.matchMedia("(min-width: 2000px)");
+const mediaQueryMedium = window.matchMedia("(min-width: 377px) and (max-width: 1999px)");
+
+function updateMosaicFooter(mediaQueryList, mediaQueryHight, mediaQueryMedium) {
+  if (mediaQueryList.matches) {
+    MOSAICFOOTER = 10;
+  } else if (mediaQueryHight.matches) {
+    MOSAICFOOTER = 200;
+  } else if (mediaQueryMedium.matches) {
+    MOSAICFOOTER = 100;
+  }
+
+  console.log("Nowa wartość MOSAICFOOTER:", MOSAICFOOTER);
+
+  updateMosaicFooterDOM(); // Aktualizacja DOM po zmianie wartości
+}
+
+function updateMosaicFooterDOM() {
+  const mosaicDown = document.querySelector(".mosaic_footer");
+  mosaicDown.innerHTML = ""; // Usuwa stare elementy
+
+  for (let i = 0; i < MOSAICFOOTER; i++) {
+    const squares = document.createElement("div");
+    squares.classList.add("squaresFooter");
+    squares.style.backgroundColor = getFromMosaicPallete();
+    mosaicDown.appendChild(squares);
+  }
+}
+
+// Ustawienie wartości na start
+updateMosaicFooter(mediaQueryList, mediaQueryHight, mediaQueryMedium);
+
+// Nasłuchiwanie zmian szerokości ekranu
+mediaQueryList.addEventListener("change", () => updateMosaicFooter(mediaQueryList, mediaQueryHight, mediaQueryMedium));
+mediaQueryHight.addEventListener("change", () => updateMosaicFooter(mediaQueryList, mediaQueryHight, mediaQueryMedium));
+mediaQueryMedium.addEventListener("change", () => updateMosaicFooter(mediaQueryList, mediaQueryHight, mediaQueryMedium));
 
 
 
@@ -60,9 +101,10 @@ for (let i = 0; i < MOSAICFOOTER; i++){
   squares.classList.add("squaresFooter");
   squares.style.backgroundColor=getFromMosaicPallete();
   mosaicDown.appendChild(squares);
+  
 
 }
-
+  
   importantLi.addEventListener("click", ()=>{
     unseenList.classList.toggle("is-hidden");
 });
@@ -97,3 +139,4 @@ for (let i = 0; i < MOSAICFOOTER; i++){
 
 
   
+
