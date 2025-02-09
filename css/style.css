@@ -11,12 +11,7 @@ overflow-x: hidden;
 
 
 }
-@media screen and (min-width: 300px) and (max-width: 376px){
-  .html{
-   overflow-x: hidden;
-  }
- }
-  
+
 
 a{
     text-decoration: none;
