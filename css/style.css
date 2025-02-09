@@ -719,7 +719,11 @@ padding-bottom: 0;
     height: 20px;
     overflow: hidden;
 }
-
+@media screen and (min-width: 300px) and (max-width: 376px){
+  .mosaic_footer{
+    display: none;
+} 
+}
 .footer_law{
     margin-top: 10%;
     cursor: pointer;
