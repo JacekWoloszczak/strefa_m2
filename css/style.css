@@ -1,9 +1,5 @@
-html{
-  overflow-x: hidden;
-}
-
 body{
-    width: 100%;
+    width: auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +7,7 @@ background-color: white;
 font-family: "Jacques Francois", serif;
 font-weight: 400;
 font-style: normal;
-
+overflow-x: hidden;
 
 
 }
@@ -37,6 +33,7 @@ a{
     position: relative;
     width: 100%;
     height: auto;
+
 }
 .pre_navigation{
     width: 100%;
@@ -145,12 +142,12 @@ a{
     justify-content: center;
     flex-wrap: wrap;
     position: absolute;
-    right: 1%;
+    right: 0;
     top: 0;
     z-index: -1;
     width: 10%;
     height: 100%;
-    overflow: hidden;
+
    
     
 }
@@ -160,6 +157,7 @@ a{
 
 }
 }
+
 
 .navigation{
     color:white;
@@ -318,6 +316,7 @@ a{
     width: 100%;
     padding-top: 5%;
     padding-bottom: 5%;
+    overflow: hidden;
    
 
 }
@@ -337,8 +336,8 @@ a{
     justify-content: center;
     flex-wrap: wrap;
     position: absolute;
-    right: 1%;
-    top:0;
+    right: 0;
+   top:0;
     z-index: -1;
     width: 10%;
     height: 100%;
@@ -511,7 +510,7 @@ a{
 }
 @media screen and (min-width: 300px) and (max-width: 376px){
   .producent_img_container{
-   width: 100%;
+   width: auto;;
     
     display: flex;
     flex-direction: column;
@@ -794,7 +793,17 @@ padding-bottom: 0;
     padding-top: 5%;
 
 }
+.silver_glass_imitation{  
+    position: absolute;
+    top: 0;
+    right:7%;
+   width: 15%;
+   height: 100%;
+   background-image:linear-gradient(to left, #c5c6c8, #848ca1, #d8dee9,#454c60,#2e3240,#f0edf3);
+   z-index:-1;
 
+
+}
 .text_container_kitchen{
     width: 70%;
     display: flex;
