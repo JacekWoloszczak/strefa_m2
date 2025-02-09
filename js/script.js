@@ -29,7 +29,7 @@ function updateMosaicFooter(mediaQueryList, mediaQueryHight, mediaQueryMedium) {
     MOSAICFOOTER = 100;
   }
 
-  console.log("Nowa wartość MOSAICFOOTER:", MOSAICFOOTER);
+
 
   updateMosaicFooterDOM(); // Aktualizacja DOM po zmianie wartości
 }
