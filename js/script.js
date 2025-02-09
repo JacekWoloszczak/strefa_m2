@@ -9,8 +9,11 @@ const navigationDiv= document.querySelector(".navigation");
 const mosaicDown= document.querySelector(".mosaic_footer");
 
 const MOSAIC= 400;
+const MOSAICFOOTER=150;
 const MOSAICMAIN=1400;
-const MOSAICFOOTER= 150;
+
+
+
 
 const weAreHere = document.querySelector(".we_are_here");
 const hideMap = document.querySelector(".container_with_map_wrapper");
@@ -57,15 +60,12 @@ for (let i = 0; i < MOSAICFOOTER; i++){
   squares.classList.add("squaresFooter");
   squares.style.backgroundColor=getFromMosaicPallete();
   mosaicDown.appendChild(squares);
-      
+
 }
+
   importantLi.addEventListener("click", ()=>{
     unseenList.classList.toggle("is-hidden");
-    
- 
-   
- 
-  });
+});
 
   document.addEventListener("click", (e) => {
     if (!e.target.closest(".important_li") && !e.target.closest(".navigation_second_deep_container")) {
@@ -92,3 +92,8 @@ for (let i = 0; i < MOSAICFOOTER; i++){
       closeMenuButton.style.display="none"
     });
   })();
+ 
+
+
+
+  

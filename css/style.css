@@ -462,6 +462,14 @@ a{
     width: 20px;
    
 }
+@media screen and (min-width: 300px) and (max-width: 376px){
+  .squaresFooter{
+    box-shadow: 0 0 2px rgb(243, 238, 238);
+     height: 20px;
+    width: 5px;
+   
+}
+}
 .text_container{
     width: 100%;
     display: flex;
