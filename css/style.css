@@ -835,7 +835,9 @@ padding-bottom: 0;
 
 }
 }
-.
+.footer_information{
+  width: 33%;
+}
 @media screen and (min-width: 300px) and (max-width: 376px){
 
   .footer_information{
@@ -858,9 +860,7 @@ padding-bottom: 0;
     
 }
 }
-.footer_information{
-  width: 33%;
-}
+
 .footer_information_list{
 
     margin-top: 15%;
