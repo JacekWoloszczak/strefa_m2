@@ -26,7 +26,7 @@ function updateMosaicFooter(mediaQueryList, mediaQueryHight, mediaQueryMedium) {
   } else if (mediaQueryHight.matches) {
     MOSAICFOOTER = 200;
   } else if (mediaQueryMedium.matches) {
-    MOSAICFOOTER = 100;
+    MOSAICFOOTER = 55;
   }
 
 
