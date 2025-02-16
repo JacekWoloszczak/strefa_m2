@@ -183,17 +183,36 @@ async function submitForm() {
   const menuOverlay = document.querySelector(".header__menu-mobile");
   const closeMenuButton = document.querySelector(".header__exit-btn");
   const openMenuBtn = document.querySelector(".header__mobile-btn");
+  
+
+ 
 
   closeMenuButton.style.display="none"
+
   openMenuBtn.addEventListener("click", (e) => {
     menuOverlay.classList.remove("d_none");
     openMenuBtn.style.display = "none";
     closeMenuButton.style.display="flex";
-    
-  });
+    openMenuBtn.style.animation = "spinScale 0.5s ease";
+
+    setTimeout(() => {
+      openMenuBtn.style.animation = "spinScale 0.5s ease";
+    }, 500);
+  })
+
   closeMenuButton.addEventListener("click", (e) => {
     menuOverlay.classList.add("d_none");
     openMenuBtn.style.display = "block";
-    closeMenuButton.style.display="none"
+    closeMenuButton.style.display="none";
+    closeMenuButton.style.animation="spinScale 0.5s ease"
+ 
+    setTimeout(() => {
+      closeMenuButton.style.animation = "spinScale 0.5s ease";
+    }, 500);
+
+
+
   });
+
+ 
 })();

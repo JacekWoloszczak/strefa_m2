@@ -1,7 +1,7 @@
 <?php
 
 // Ustawienie adresu e-mail odbiorcy
-$to = "opakowania.lomianki@gmail.com"; // Zmień na właściwy adres e-mail
+$to = "j_w07@wp.pl"; // Zmień na właściwy adres e-mail
 
 // Sprawdzenie, czy formularz został wysłany
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
