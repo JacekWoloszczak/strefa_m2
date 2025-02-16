@@ -105,22 +105,26 @@ function windowsClose() {
       menuOverlay.classList.remove("d_none");
       openMenuBtn.style.display = "none";
       closeMenuButton.style.display="flex";
-      openMenuBtn.style.animation = "spinScale 0.5s ease";
-
-      setTimeout(() => {
-        openMenuBtn.style.animation = "spinScale 0.5s ease";
-      }, 500);
+      
+      openMenuBtn.style.animation = "none";
+     setTimeout(() => {
+      openMenuBtn.style.animation = "spinScale 0.5s ease-in-out ";
+    }, 10);
+     
     })
   
     closeMenuButton.addEventListener("click", (e) => {
       menuOverlay.classList.add("d_none");
       openMenuBtn.style.display = "block";
       closeMenuButton.style.display="none";
-      closeMenuButton.style.animation="spinScale 0.5s ease"
-   
+      
+      closeMenuButton.style.animation = "none";
+  
       setTimeout(() => {
-        closeMenuButton.style.animation = "spinScale 0.5s ease";
-      }, 500);
+        closeMenuButton.style.animation = "spinScale 0.5s ease-in-out ";
+      }, 10);
+       
+  
 
 
 

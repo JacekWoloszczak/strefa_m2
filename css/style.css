@@ -1971,9 +1971,10 @@ padding-bottom: 0;
   @media screen and (min-width: 300px) and (max-width: 376px){
     .navigation_promotion{
       display: none;
+    }
+    
+  }
   
-  }
-  }
   @media screen and (min-width: 377px) and (max-width: 767px){
     .navigation_promotion{
       display: none;
@@ -2049,7 +2050,7 @@ padding-bottom: 0;
       border: none;
       animation: animationMobile ease 1.5s;
     }
-  
+    
     .header__menu-mobile {
      
       background-color: #1716166e;
