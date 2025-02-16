@@ -120,10 +120,10 @@ function windowsClose() {
       
       closeMenuButton.style.animation = "none";
   
-      setTimeout(() => {
-        closeMenuButton.style.animation = "spinScale 0.5s ease-in-out ";
-      }, 10);
-       
+     setTimeout(() => {
+      closeMenuButton.style.animation = "spinScale 0.5s ease-in-out ";
+    }, 10);
+     
   
 
 
