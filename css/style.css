@@ -424,7 +424,7 @@ a{
   }
 }
 .navigation_static_image{
-    background-image: url("../assets/salon-11.png");
+    background-image: url("../assets/zdjecie-wnetrza-salonu-M2.webp");
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -595,7 +595,7 @@ a{
     position: relative;
     z-index: 2;
     background-attachment: fixed;
-    background-image: url("../assets/salon-14v2.jpg");
+    background-image: url("../assets/zdjecie-zlotej-umywalki-wraz-z-bateriami.webp");
     background-size: cover;
 
 }
@@ -757,7 +757,7 @@ a{
   }
 }
 .hue_rotate_animation{
-    background-image: url("../assets/salon-4v2.jpg");
+    background-image: url("../assets/zdjecie-aranzacji-lazienki-wedlug-projektu-salonu-strefaM2.webp");
     background-size: cover;
     width: 100%;
     height: 700px;
@@ -1069,7 +1069,7 @@ padding-bottom: 0;
 
 /* =========================================KUCHNIA======================================================= */
 .navigation_static_image_kitchen{
-    background-image: url("../assets/salon-9.png");
+    background-image: url("../assets/zdjecie-bateri-kuchennych.webp");
     background-size: cover;
     background-attachment: fixed;
     z-index: 2;
@@ -1328,7 +1328,7 @@ padding-bottom: 0;
 }
 /* =====================================ŁAZIENKA========================================================== */
 .navigation_static_image_bathroom{
-    background-image: url("../assets/salon.png");
+    background-image: url("../assets/wnetrze-salonu-strefaM2-lustra.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
