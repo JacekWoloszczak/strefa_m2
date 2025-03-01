@@ -34,12 +34,46 @@ a{
     position: relative;
     width: 100%;
     height: auto;
+    z-index: 1;
+    
 
 }
 .pre_navigation{
     width: 100%;
-   
+  
    display: flex;
+   position: relative;
+   
+ 
+
+  }
+  .opal{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  
+    top: 0;
+
+    z-index: 0;
+    transform: rotate(5deg);
+	transform-origin: top right;
+ 
+  background-image: linear-gradient(199deg, rgba(228, 196, 229, 0.374) 20%, rgba(138, 183, 198, 0.297) 34%, rgba(208, 208, 177, 0.388) 67%, rgba(216, 194, 169, 0.388) 100%),
+ radial-gradient(circle, rgba(244, 221, 244, 0.351) 4%, rgba(243, 238, 237, 0.34) 34%, rgba(245, 245, 230, 0.345) 67%, rgba(158, 193, 238, 0.362) 100%);
+  box-shadow: -130px 0 80px 40px white, 50px 0 50px 25px rgba(192, 192, 192, 0.378),100px 0 80px 40px white,;
+  animation-delay: 5s;
+  filter:blur(1.5rem);
+    animation: opal-effect infinite ease 10s;
+  }
+  @keyframes opal-effect{
+    from {
+      right: -15vw;
+    }
+    to {
+      right: 100vw;
+    }
+
+
   }
    @media screen and (min-width: 300px) and (max-width: 376px){
     .pre_navigation{
@@ -231,7 +265,7 @@ a{
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 0;
+    z-index: 1;
     width: 10%;
     height: 100%;
 
@@ -257,7 +291,7 @@ a{
 }
 }
 .navigation{
-    color:white;
+    color: black;
     font-weight:900;
     display: flex;
     align-items: center;
@@ -269,6 +303,9 @@ a{
 
     background-color:#9e5f0038;
 
+}
+.navigation a{
+  color: black;
 }
 @media screen and (min-width: 300px) and (max-width: 376px){
   .navigation{
@@ -297,7 +334,7 @@ a{
 }
 
 .we_are_here_span{
-    color: white;
+    color: black;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -313,6 +350,7 @@ a{
  justify-content: center;
     align-items: center;
     gap: 20px;
+ 
 
     
 }
@@ -865,7 +903,7 @@ padding-bottom: 0;
     }
     .span_key_word:last-of-type{
       position: absolute;
-        top: 45%;;
+        top: 47%;;
         width: 60%;
         height: 20%;
     }
@@ -1722,6 +1760,7 @@ padding-bottom: 0;
     background-size: 700px 500px;
     background-repeat: no-repeat;
     background-position: top 20% left 50%;
+    height: 500px;
     
  }
 
@@ -2190,4 +2229,3 @@ padding-bottom: 0;
       transform: rotate(360deg) scale(0.5);
     }
   }
-  
