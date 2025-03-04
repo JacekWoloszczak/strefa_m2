@@ -42,15 +42,16 @@ a{
     width: 100%;
   
    display: flex;
+  
    position: relative;
-   
+   z-index: 3;
  
 
   }
   .opal{
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 20vh;
   
     top: 0;
 
@@ -74,6 +75,12 @@ a{
     }
 
 
+  }
+  @media screen and (min-width: 300px) and (max-width: 1023px){
+  .opal{
+    display: none;
+  }
+    
   }
    @media screen and (min-width: 300px) and (max-width: 376px){
     .pre_navigation{
@@ -466,7 +473,7 @@ a{
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    z-index: 2;
+    z-index: 1;
     width: 100%;
     height: 700px;
 }
@@ -475,6 +482,7 @@ a{
    background-image: none;
    width: 100%;
     height: 400px;
+    z-index: 0;
 }
 }
 @media screen and (min-width: 377px) and (max-width: 767px){
@@ -482,6 +490,7 @@ a{
     background-image: none;
     width: 100%;
      height: 500px;
+     z-index: 0;
  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px){
@@ -489,6 +498,7 @@ a{
     background-image: none;
     width: 100%;
     height: 500px;
+    
     
  }
 }
@@ -1120,6 +1130,7 @@ padding-bottom: 0;
    background-image: none;
    width: 100%;
     height: 350px;
+    z-index: 0;
 }
 }
 @media screen and (min-width: 377px) and (max-width: 767px){
@@ -1127,6 +1138,7 @@ padding-bottom: 0;
     background-image: none;
     width: 100%;
      height: 400px;
+     z-index: 0;
  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px){
@@ -1134,6 +1146,7 @@ padding-bottom: 0;
     background-image: none;
     width: 100%;
     height: 500px;
+    z-index: 0;
     
  }
 }
@@ -1468,20 +1481,24 @@ padding-bottom: 0;
   
     position: fixed;
     top: 0;
-    left: 0;
+    
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), black);
     width: 100%;
     height: 100%;
     z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
   }
   .modal-content{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-bottom: 5%;
   
   }
+  
   .mySlides {
     
     display: none;
@@ -1490,7 +1507,7 @@ padding-bottom: 0;
 }
 @media screen and (max-width: 376px){
   .modal-content{
-    margin-top: 50%;
+    margin-bottom: 70%;
 
   } 
   .mySlides{
@@ -1509,7 +1526,7 @@ padding-bottom: 0;
 }
 @media screen and (min-width: 377px) and (max-width: 767px) {
   .modal-content{
-    margin-top: 50%;
+    margin-bottom: 50%;
 
   } 
   .mySlides{
@@ -1528,14 +1545,14 @@ padding-bottom: 0;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px){
   .modal-content{
-    margin-top: 10%;
+    margin-bottom: 10%;
 
   } 
   .mySlides{
     
     display: none;
     width: 100%;
-    height: 400px;
+    height: auto;
     
   }
 .slaiderSlaid{
@@ -1545,11 +1562,31 @@ padding-bottom: 0;
   object-fit: contain;
 }
 }
-@media screen and (min-width: 1700px){
+@media screen and (min-width: 1024px) and (max-width: 1699px){
   .modal-content{
-    margin-top: 20%;
+    margin-bottom: 40%;
 
-  } 
+  }  
+  
+  .mySlides{
+    
+    display: none;
+    max-width: 70%;
+    height: 300px;
+    
+  }
+.slaiderSlaid{
+
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+}
+@media screen and (min-width: 1700px){
+  /* .modal-content{
+    /* margin: 50vh auto; */
+
+  }  */
   .mySlides{
     
     display: none;
@@ -1563,7 +1600,7 @@ padding-bottom: 0;
   height: 600px;
   object-fit: contain;
 }
-}
+
 .gallery {
     width: 100%;
     padding-top: 5%;
@@ -1994,6 +2031,25 @@ padding-bottom: 0;
     width: 100%;
     height: 700px;
     position: relative;
+  }
+  @media screen and (min-width: 300px) and (max-width: 376px){
+    .navigation_static_image_promotion{
+      z-index: 0;
+    }
+    
+  }
+  
+  @media screen and (min-width: 377px) and (max-width: 767px){
+    .navigation_static_image_promotion{
+     z-index: 0;
+  
+  }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+    .navigation_static_image_promotion{
+      z-index: 0;
+  
+  }
   }
   .navigation_promotion{
     color:white;
