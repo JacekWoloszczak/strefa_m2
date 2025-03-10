@@ -2,10 +2,15 @@ const unseenList= document.querySelector(".navigation_second_deep_container_cont
 const importantLi= document.querySelector(".important_li")
 const weAreHere = document.querySelector(".we_are_here");
 const hideMap = document.querySelector(".container_with_map_wrapper");
+const mosaic= document.querySelector(".mosaic");
+const mosaicMain= document.querySelector(".mosaic_main");
 const mosaicDown= document.querySelector(".mosaic_footer");
-const mosaicPallette= ["#a89574", "#902000", "#9e6000", "#470c00","#6e4204"];
+const mosaicPallette= ["#1f4dc2", "#ddd42e", "#20d4c2", "#3f13b5","#08065a"];
+// const mosaicPallette= ["#a89574", "#902000", "#9e6000", "#470c00","#6e4204"];
 
+const MOSAIC= 400;
 let MOSAICFOOTER;
+const MOSAICMAIN=1400;
 
 
 
@@ -54,6 +59,23 @@ function getFromMosaicPallete(){
   const colorMosaic= Math.floor(Math.random() * mosaicPallette.length);
   return mosaicPallette[colorMosaic];
 }
+
+
+for (let i = 0; i < MOSAIC; i++){
+  const squares= document.createElement("div");
+  squares.classList.add("squaresMosaic");
+  squares.style.backgroundColor=getFromMosaicPallete();
+  mosaic.appendChild(squares);
+      
+}
+for (let i = 0; i < MOSAICMAIN; i++){
+  const squares= document.createElement("div");
+  squares.classList.add("squaresMosaic");
+  squares.style.backgroundColor=getFromMosaicPallete();
+  mosaicMain.appendChild(squares);
+      
+};
+
 function windowsClose() {
     hideMap.classList.remove("is-visibility");
   }

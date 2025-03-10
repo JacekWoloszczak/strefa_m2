@@ -1,15 +1,20 @@
 const unseenList= document.querySelector(".navigation_second_deep_container_kitchen")
 const importantLi= document.querySelector(".important_li")
 const weAreHere = document.querySelector(".we_are_here");
+
+
+const mosaicPallette= ["#1f4dc2", "#ddd42e", "#20d4c2", "#3f13b5","#08065a"];
 const hideMap = document.querySelector(".container_with_map_wrapper");
 const mosaicDown= document.querySelector(".mosaic_footer");
-const mosaicPallette= ["#a89574", "#902000", "#9e6000", "#470c00","#6e4204"];
+// const mosaicPallette= ["#a89574", "#902000", "#9e6000", "#470c00","#6e4204"];
 const sinkButton= document.querySelector(".sink_button_first");
 const sinkPresentation= document.querySelector(".sink_presentation_first")
 const sinkButtonSnd= document.querySelector(".sink_button_second");
 const sinkPresentationSnd= document.querySelector(".sink_presentation_second")
 const sinkButtonrd= document.querySelector(".sink_button_third");
 const sinkPresentationrd= document.querySelector(".sink_presentation_third")
+
+
 let MOSAICFOOTER;
 
 const mediaQueryList = window.matchMedia("(max-width: 376px)");
@@ -41,7 +46,6 @@ function updateMosaicFooterDOM() {
     mosaicDown.appendChild(squares);
   }
 }
-
 // Ustawienie wartości na start
 updateMosaicFooter(mediaQueryList, mediaQueryHight, mediaQueryMedium);
 
@@ -54,6 +58,9 @@ function getFromMosaicPallete(){
   const colorMosaic= Math.floor(Math.random() * mosaicPallette.length);
   return mosaicPallette[colorMosaic];
 }
+
+
+
 function windowsClose() {
     hideMap.classList.remove("is-visibility");
   }

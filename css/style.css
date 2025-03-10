@@ -316,7 +316,8 @@ a{
     height: 150px;
     position: relative;
 
-    background-color:#9e5f0038;
+    /* background-color:#9e5f0038; */
+    background-color: #20d4c25d;
 
 }
 .navigation a{
@@ -360,6 +361,7 @@ a{
   
     font-weight: bolder;
     width: inherit;
+    font-size: large;
     list-style-type: none;
     display: flex;
  justify-content: center;
@@ -395,8 +397,8 @@ a{
     justify-content: center;
     align-items: center;
     /* background-color:rgba(48, 5, 88, 0.167); */
-    background-color:#9e5f0038;
-    border: 1px solid black;
+    background-color:inherit;
+    /* border: 1px solid black; */
 
 
 
@@ -411,6 +413,7 @@ a{
     justify-content: center;
     align-items: center;
     width: 50%;
+    
     list-style-type: none;
     gap: 40px;
 
@@ -422,6 +425,7 @@ a{
   }
 }
 .second-deep-li{
+ 
     cursor: pointer;
 }
 .span_second_deep:hover{
@@ -903,7 +907,7 @@ padding-bottom: 0;
     .span_key_word{
         width: 30%;
         height: 20%;
-        background-color: rgba(255, 255, 255, 0.146);
+        background-color: #20d4c25d;
         border: 2px doted black;
         cursor: pointer;
         margin-top: 5%;
@@ -1179,8 +1183,9 @@ padding-bottom: 0;
     width: 100%;
     height: 150px;
     position: relative;
- 
+    
     background-color:#454c6044;
+
 }
 @media screen and (min-width: 300px) and (max-width: 376px){
   .navigation_kitchen{
@@ -1219,7 +1224,7 @@ padding-bottom: 0;
 .main_relative_wrapper_kitchen{
     position:relative;
     width: 100%;
-   
+    
     padding-top: 5%;
 
 }
@@ -1257,8 +1262,10 @@ padding-bottom: 0;
     padding-top: 5%;
 }
 .text_container_kitchen{
-    width: 70%;
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 5%;
     padding-top: 5%;
 }
@@ -1499,6 +1506,13 @@ padding-bottom: 0;
     background-color:#5b3c315d;
     border: 1px solid black;
 }
+.main_relative_wrapper_bathroom{
+  position:relative;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
 /* ===========================LIGHTBOX======================================================================== */
 .modal {
     visibility: hidden;
@@ -1629,6 +1643,8 @@ padding-bottom: 0;
     width: 100%;
     padding-top: 5%;
     padding-bottom: 5%;
+  
+   
   }
   .gallery_list {
     display: flex;
@@ -1637,6 +1653,8 @@ padding-bottom: 0;
     align-items: center;
     gap: 30px;
     list-style-type: none;
+   
+
   }
   .gallery_list-item {
     width: 30%;
@@ -1647,8 +1665,10 @@ padding-bottom: 0;
     background-repeat: no-repeat;
     background-position:right 5% top 50%;
     background-size: 100px;
-
+ 
   }
+
+
   @media screen and (max-width: 376px) {
     .gallery_list {
     
@@ -1801,6 +1821,7 @@ padding-bottom: 0;
     align-items: center;
     width: 100%;
     padding-bottom: 5%;
+    position: relative;
  }
  @media screen and (min-width: 300px) and (max-width: 376px){
   .main_relative_wrapper_contact{
@@ -1865,6 +1886,8 @@ padding-bottom: 0;
     width: 100%;
     height: 150px;
     position: relative;
+    z-index: 2;
+  
     background-color:rgba(35, 91, 175, 0.504); 
  }
  @media screen and (min-width: 300px) and (max-width: 376px){
@@ -2019,6 +2042,8 @@ padding-bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 4;
   }
   @media screen and (min-width: 300px) and (max-width: 376px){
     .map_contact{
