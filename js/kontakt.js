@@ -242,7 +242,7 @@ async function submitForm() {
 
 
 // ====================do sprawdzenia=======================
-document.querySelector(".contactForm").addEventListener("submit", function (e) {
+document.querySelector(".contact_form").addEventListener("submit", function (e) {
   e.preventDefault();  // Zapobiega przeładowaniu strony
 
   const formData = new FormData(this);

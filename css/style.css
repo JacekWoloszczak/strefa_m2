@@ -2445,3 +2445,16 @@ padding-bottom: 0;
       transform: rotate(360deg) scale(0.5);
     }
   }
+#messageBox{
+  width: 50%;
+  height: auto;
+ border: 2px solid red;
+ background-color:rgba(185, 45, 45, 0.438);
+ color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 24px;
+ margin: auto;
+ 
+}
