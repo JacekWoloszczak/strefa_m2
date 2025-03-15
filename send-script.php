@@ -26,14 +26,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
     // Wysłanie wiadomości
-    if (mail($to, $subject, $body, $headers)) {
-        echo json_encode(["status" => "success"]);
-    } else {
-        echo json_encode(["status" => "error", "message" => "Wystąpił problem z wysłaniem wiadomości."]);
-    }
-} else {
-    echo json_encode(["status" => "error", "message" => "Niepoprawne żądanie."]);
-}
+//     if (mail($to, $subject, $body, $headers)) {
+//         echo json_encode(["status" => "success"]);
+//     } else {
+//         echo json_encode(["status" => "error", "message" => "Wystąpił problem z wysłaniem wiadomości."]);
+//     }
+// } else {
+//     echo json_encode(["status" => "error", "message" => "Niepoprawne żądanie."]);
+// }
 
 
 header('Content-Type: application/json');
