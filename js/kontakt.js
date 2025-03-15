@@ -239,3 +239,26 @@ async function submitForm() {
 
  
 })();
+
+
+// ====================do sprawdzenia=======================
+document.querySelector(".contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();  // Zapobiega przeładowaniu strony
+
+  const formData = new FormData(this);
+
+  fetch("send-script.php", {
+      method: "POST",
+      body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+      const messageBox = document.querySelector("#messageBox");
+      if (data.status === "success") {
+          messageBox.innerHTML = `<p style="color: green;">${data.message}</p>`;
+      } else {
+          messageBox.innerHTML = `<p style="color: red;">${data.message}</p>`;
+      }
+  })
+  .catch(error => console.error("Błąd:", error));
+});

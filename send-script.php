@@ -34,4 +34,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo json_encode(["status" => "error", "message" => "Niepoprawne żądanie."]);
 }
+
+
+header('Content-Type: application/json');
+
+if (mail($to, $subject, $body, $headers)) {
+    echo json_encode(["status" => "success", "message" => "Wiadomość została wysłana pomyślnie!"]);
+} else {
+    echo json_encode(["status" => "error", "message" => "Błąd wysyłki wiadomości. Spróbuj ponownie."]);
+}
+exit();
 ?> 
