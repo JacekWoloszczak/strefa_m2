@@ -11,6 +11,7 @@ font-style: normal;
 overflow-x: hidden;
 
 
+
 }
 
 
@@ -317,10 +318,17 @@ a{
     position: relative;
 
     /* background-color:#9e5f0038; */
-    background-color: #20d4c25d;
+    /* background-color: #20d4c25d; */
+    background-color: #78938c4e;
 
 }
 .navigation a{
+  color: black;
+}
+.navigation_promotion a{
+  color: black;
+}
+.navigation_contact a{
   color: black;
 }
 @media screen and (min-width: 300px) and (max-width: 376px){
@@ -351,8 +359,9 @@ a{
 
 .we_are_here_span{
     color: black;
-    font-weight: 900;
+    font-weight:bolder;
     text-transform: uppercase;
+    
 }
 .we_are_here_span:hover{
     color: #902000;
@@ -367,6 +376,8 @@ a{
  justify-content: center;
     align-items: center;
     gap: 20px;
+   
+
  
 
     
@@ -374,11 +385,18 @@ a{
 .li_navigation{
   cursor: pointer;
 }
+.span_navigation{
+  color: inherit;
+}
+.span_navigation-bathroom{
+  color: white;
+}
 .span_navigation:hover{
     color:#902000;
   }
 .important_li{
     cursor: pointer;
+    
     
     
     
@@ -413,7 +431,7 @@ a{
     justify-content: center;
     align-items: center;
     width: 50%;
-    
+    color: inherit;
     list-style-type: none;
     gap: 40px;
 
@@ -425,7 +443,7 @@ a{
   }
 }
 .second-deep-li{
- 
+  
     cursor: pointer;
 }
 .span_second_deep:hover{
@@ -483,13 +501,14 @@ a{
   }
 }
 .navigation_static_image{
-    background-image: url("../assets/zdjecie-wnetrza-salonu-M2.webp");
+    background-image: url("../assets/Zdjecie-wejscia-do-salonu-strefam2-homeConcept.webp");
     background-size: cover;
     background-attachment: fixed;
+    background-position: 100%;
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 700px;
+    height: 1048px;
 }
 @media screen and (min-width: 300px) and (max-width: 376px){
   .navigation_static_image{
@@ -658,7 +677,7 @@ a{
     position: relative;
     z-index: 2;
     background-attachment: fixed;
-    background-image: url("../assets/zdjecie-zlotej-umywalki-wraz-z-bateriami.webp");
+    background-image: url("../assets/zdjecie-aranzacji-szafka-i-lustro-mieszczacej-sie-w-salonie-strefam2.webp");
     background-size: cover;
 
 }
@@ -828,11 +847,12 @@ a{
   }
 }
 .hue_rotate_animation{
-    background-image: url("../assets/zdjecie-aranzacji-lazienki-wedlug-projektu-salonu-strefaM2.webp");
+    background-image: url("../assets/zdjecie-aranzacji-lazienki-strefam2.webp");
     background-size: cover;
+    background-position: 100%;
     width: 100%;
-    height: 700px;
-    background-attachment: fixed;
+    height: 960px;
+    /* background-attachment: fixed; */
     animation: hue-rot 8s infinite;
     padding-bottom: 5%;
     display: flex;
@@ -907,7 +927,8 @@ padding-bottom: 0;
     .span_key_word{
         width: 30%;
         height: 20%;
-        background-color: #20d4c25d;
+        background-color: #d9e3e48d;
+
         border: 2px doted black;
         cursor: pointer;
         margin-top: 5%;
@@ -1140,9 +1161,10 @@ padding-bottom: 0;
 
 /* =========================================KUCHNIA======================================================= */
 .navigation_static_image_kitchen{
-    background-image: url("../assets/zdjecie-bateri-kuchennych.webp");
+    background-image: url("../assets/zdjecie-ekspozycji-baterii-kuchennych-w-salonie-strefam2.webp");
     background-size: cover;
     background-attachment: fixed;
+    background-position: 100%;
     z-index: 2;
     width: 100%;
     height: 700px;
@@ -1174,7 +1196,7 @@ padding-bottom: 0;
  }
 }
 .navigation_kitchen{
-    color:white;
+  color: white;
     font-weight:900;
     display: flex;
     align-items: center;
@@ -1217,7 +1239,7 @@ padding-bottom: 0;
     align-items: center;
     /* background-color:rgba(48, 5, 88, 0.167); */
     background-color:#454c6044;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 
@@ -1276,7 +1298,7 @@ padding-bottom: 0;
 
 .sink_button_first{
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 41.5%;
     background-color:#0fc33f;
     width: 50px;
@@ -1297,8 +1319,8 @@ padding-bottom: 0;
 }
 .sink_button_third{
     position: absolute;
-    top: 45%;
-    right:11%;
+    top: 40%;
+    right:20%;
     background-color:#0fc33f;
     width: 50px;
     height: 50px;
@@ -1330,8 +1352,8 @@ padding-bottom: 0;
   }
 .sink_presentation_first{
     position: absolute;
-    top: 35%;
-    left: 46%;
+    top: 25%;
+    left: 6%;
     width: 35%;
     background-color: #f0edf3;
     display: flex;
@@ -1340,11 +1362,39 @@ padding-bottom: 0;
     gap: 10%;
     border: 2px solid black;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1025px){
   .sink_presentation_first{
     top: 20%;
     left: 20%;
-    width: 55%;
+    width: 70%;
+    z-index: 2;
+  }
+  
+  
+  .sink_presentation_first img{
+    width: 150px;
+    height: 100px;
+ }
+}
+@media screen and (min-width: 1026px) and (max-width: 1439px){
+  .sink_presentation_first{
+    top: 20%;
+    left: 20%;
+    width: 70%;
+    z-index: 2;
+  }
+  
+  
+  .sink_presentation_first img{
+    width: 150px;
+    height: 100px;
+ }
+}
+@media screen and (min-width: 1026px) and (max-width: 1439px){
+  .sink_presentation_first{
+    top: 20%;
+    right: 10%;
+    width: 70%;
     z-index: 2;
   }
   
@@ -1367,11 +1417,25 @@ padding-bottom: 0;
     gap: 10%;
     border: 2px solid black;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1025px){
   .sink_presentation_second{
     top: 20%;
     right: 10%;
-    width: 55%;
+    width: 70%;
+    z-index: 2;
+  }
+  
+  
+  .sink_presentation_second img{
+    width: 150px;
+    height: 100px;
+ }
+}
+@media screen and (min-width: 1023px) and (max-width: 1439px){
+  .sink_presentation_second{
+    top: 20%;
+    right: 10%;
+    width: 70%;
     z-index: 2;
   }
   
@@ -1383,10 +1447,10 @@ padding-bottom: 0;
 }
 .sink_presentation_third{
     position: absolute;
-    top: 35%;
+    top: 45%;
     right: 15%;
-    width: 35%;
-    width: 40%;
+    width: 60%;
+ 
     background-color: #f0edf3;
     display: flex;
     justify-content: center;
@@ -1394,7 +1458,7 @@ padding-bottom: 0;
     gap: 10%;
     border: 2px solid black;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1025px){
   .sink_presentation_third{
     top: 60%;
     right: 10%;
@@ -1504,7 +1568,7 @@ padding-bottom: 0;
     justify-content: center;
     align-items: center;
     background-color:#5b3c315d;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .main_relative_wrapper_bathroom{
   position:relative;
@@ -1877,7 +1941,7 @@ padding-bottom: 0;
  }
 }
  .navigation_contact{
-    color:white;
+    color:black;
     font-weight:900;
     display: flex;
     align-items: center;
@@ -1888,7 +1952,7 @@ padding-bottom: 0;
     position: relative;
     z-index: 2;
   
-    background-color:rgba(35, 91, 175, 0.504); 
+    background-color:#78938c9c; 
  }
  @media screen and (min-width: 300px) and (max-width: 376px){
   .navigation_contact{
@@ -1918,9 +1982,11 @@ padding-bottom: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:rgba(35, 91, 175, 0.504);
-    border: 1px solid black;
+    background-color:inherit;
+    /* border: 1px solid black; */
+    color:inherit;
  }
+
  .contact_form{
     width:50%;
     display:flex;
@@ -2111,7 +2177,7 @@ padding-bottom: 0;
   }
   }
   .navigation_promotion{
-    color:white;
+    color: black;
     font-weight:900;
     display: flex;
     align-items: center;
@@ -2120,7 +2186,7 @@ padding-bottom: 0;
     width: 100%;
     height: 150px;
     position: relative;
-    background-color:rgba(150, 18, 77, 0.504); 
+    background-color:#78938c6c; 
   }
   @media screen and (min-width: 300px) and (max-width: 376px){
     .navigation_promotion{
@@ -2146,13 +2212,48 @@ padding-bottom: 0;
     width: 10%;
     height: inherit;
     bottom: -103%;
-    color: white;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color:inherit;
-    border: 1px solid black;
+    color: inherit;
+    /* border: 1px solid black; */
+  }
+
+.main_relative_wrapper_promotion{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+  
+}
+  .promotion_container{
+    width: 100%;
+    margin-top: 10%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .promotion_offert_img{
+    height: 400px;
+  } */
+  .promotion_offert_text{
+    font-size: 20px;
+    line-height: 1.8;
+    color: black;
+    width: 60%;
+    margin-left: 10%;
+    text-align: left;
+
+
+
+  }
+  .promotion_link{
+    text-decoration: none;
+    color: red;
+    
   }
   /* ================================MOBILE================================ */
   .mobile_navigation {

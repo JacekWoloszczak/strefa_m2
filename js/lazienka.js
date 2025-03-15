@@ -4,8 +4,8 @@ const weAreHere = document.querySelector(".we_are_here");
 const hideMap = document.querySelector(".container_with_map_wrapper");
 const mosaicDown= document.querySelector(".mosaic_footer");
 // const mosaicPallette= ["#a89574", "#902000", "#9e6000", "#470c00","#6e4204"];
-
-const mosaicPallette= ["#1f4dc2", "#ddd42e", "#20d4c2", "#3f13b5","#08065a"];
+const mosaicPallette= ["#78938c", "#62766a", "#d9e3e4", "#2c3240","#b5bbb7"];
+// const mosaicPallette= ["#1f4dc2", "#ddd42e", "#20d4c2", "#3f13b5","#08065a"];
 
 let MOSAICFOOTER;
 
