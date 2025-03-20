@@ -443,7 +443,7 @@ a{
   }
 }
 .second-deep-li{
-  
+    text-transform: uppercase;
     cursor: pointer;
 }
 .span_second_deep:hover{
